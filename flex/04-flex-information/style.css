@@ -1,21 +1,47 @@
-body {
-  font-family: 'Courier New', Courier, monospace;
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  background-color: bisque;
   text-align: center;
 }
 
-img {
+img{
   width: 100px;
-  height: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 0;
 }
 
-.title {
+.head{
   font-size: 36px;
   font-weight: 900;
   display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.content{
+  display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 32px;
+  align-content: center;
+  justify-content: space-between;
+  gap: 20px;
 }
+
 
 /* do not edit this footer */
 .footer {
@@ -28,19 +54,4 @@ img {
   align-items: center;
   justify-content: center;
   background: #eee;
-}
-
-.container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.info{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
